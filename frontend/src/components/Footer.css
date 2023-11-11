@@ -1,0 +1,23 @@
+
+#footer{
+    grid-area:footer;
+    display:grid;
+    place-items: center;
+    place-content: center;
+    padding:4px;
+    padding-bottom: 0px;
+    bottom:0px;
+    text-align: center;
+    background: rgb(0, 110, 255);
+    color:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.emoji{
+    /* display: inline-block; */
+    color:red;
+    font-size: 15px;
+}
+

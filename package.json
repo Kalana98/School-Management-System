@@ -1,0 +1,39 @@
+{
+  "name": "school_management_system",
+  "version": "1.0.0",
+  "description": "This is a school management system built using MERN stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upendradhamala/School-Management-System.git"
+  },
+  "author": "Upendra Dhamala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upendradhamala/School-Management-System/issues"
+  },
+  "homepage": "https://github.com/upendradhamala/School-Management-System#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.4",
+    "nepali-date-converter": "^3.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
